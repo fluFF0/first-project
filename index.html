@@ -10,112 +10,440 @@
     <header class="header">
       <div class="container">
         <div class="header__wrapper">
-          <div class="header__block">
-            <nav class="nav">
-              <a href="/" class="nav__link">Furniture</a>
-              <a href="/" class="nav__link">Why Feacher</a>
-              <a href="/" class="nav__link">Feather for Business</a>
-              <a href="/" class="header__logo"
-                ><img src="img/logo.jpg" alt="logo"
-              /></a>
-              <a href="/" class="nav__link">Check if We Deliver</a>
-              <a href="/" class="nav__link">Search</a>
-              <a href="/" class="nav__link">Account</a>
-              <a href="/" class="header__basket"
-                ><img src="img/basket.jpg" alt="basket"
-              /></a>
-            </nav>
-          </div>
-        </div>
-        <div class="header__blockText">
-          <table class="table">
-            <tr>
-              <td class="one__Td">
-                <p class="header__textOne">Curated and Convenient</p>
-                <p class="header__textTwo">
-                  We've built our offerings on the principle that everyone
-                  deserves high-quality design without the high cost. We offer
-                  elevated rental inventory, to transform your space. Reuse and
-                  recycle - we make the decision as light as a “feather”
-                </p>
-                <a href="/">
-                  <button class="header__button">Get Started</button>
-                </a>
-              </td>
-              <td>
-                <img
-                  src="img/main room.png"
-                  alt="main room"
-                  class="header__img"
-                />
-              </td>
-            </tr>
-          </table>
-          <p class="header__topText">Shop by Room</p>
-
-          <table class="shop__room">
-            <tr class="trOne">
-              <td>
-                <img src="img/living.jpg" alt="living room" class="living" />
-              </td>
-              <td>
-                <img src="img/bedroom.jpg" alt="bedroom" class="bedroom" />
-              </td>
-              <td>
-                <img src="img/office.jpg" alt="office room" class="office" />
-              </td>
-              <td>
-                <img src="img/dining.jpg" alt="dining room" class="dining" />
-              </td>
-            </tr>
-            <tr>
-              <td><a href="/" class="Ltext">Living Room</a></td>
-              <td><a href="/" class="Btext">Bedroom</a></td>
-              <td><a href="/" class="Otext">Home Office</a></td>
-              <td><a href="/" class="Dtext">Dining Room</a></td>
-            </tr>
-          </table>
+          <nav class="nav__menu">
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a href="#" class="menu__link" id="One">Furniture</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link" id="Two">Why Feather</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">Feather for Business</a>
+              </li>
+              <li class="menu__item">
+                <a href="/" class="menu__link"
+                  ><img src="img/logo.jpg" alt="logo" class="img__logo"
+                /></a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link" id="Three"
+                  >Check if We Deliver</a
+                >
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link" id="Four">Search</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link" id="Five">Account</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link"
+                  ><img src="img/basket.jpg" alt="basket" class="menu__img"
+                /></a>
+              </li>
+            </ul>
+          </nav>
         </div>
       </div>
+      <section class="intro">
+        <div class="container">
+          <div class="intro__wrapper">
+            <div class="intro__left">
+              <p class="intro__title">Curated and Convenient</p>
+              <p class="intro__text">
+                We've built our offerings on the principle that everyone
+                deserves high-quality design without the high cost. We offer
+                elevated rental inventory, to transform your space. Reuse and
+                recycle - we make the decision as light as a “feather”
+              </p>
+              <button class="intro__button">
+                <a href="#" class="intro__link">Get Started</a>
+              </button>
+            </div>
+            <img src="img/main room.png" alt="main room" class="intro__img" />
+          </div>
+        </div>
+      </section>
     </header>
-    <div class="container">
-      <info class="info">
-        <p class="info__text">
-          “Keeping Furniture in Homes and out of Landfills."
-        </p>
-        <p class="info__textTwo">
-          This isn’t just another rental company - We’re elevating the future of
-          furniture by replacing the commitment of ownership with a culture of
-          sharing in a way that’s curated, convenient, and sustainable.
-        </p>
-      </info>
-    </div>
-    <basis class="basis">
+    <section class="room">
       <div class="container">
-        <table class="table">
-          <tr>
-            <td class="one__Td">
-              <p class="basis__textOne">
+        <p class="room__title">Shop by Room</p>
+        <div class="room__wrapper">
+          <div class="living">
+            <img src="img/living.jpg" alt="living room" />
+            <p class="living__text">Living Room</p>
+          </div>
+          <div class="bedroom">
+            <img src="img/bedroom.jpg" alt="bedroom" />
+            <p class="bedroom__text">Bedroom</p>
+          </div>
+          <div class="office">
+            <img src="img/office.jpg" alt="home office" />
+            <p class="office__text">Home Office</p>
+          </div>
+          <div class="dining">
+            <img src="img/dining.jpg" alt="dining room" />
+            <p class="dining__text">Dining Room</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="info">
+      <div class="container">
+        <div class="info__wrapper">
+          <p class="info__title">
+            “Keeping Furniture in Homes and out of Landfills."
+          </p>
+          <p class="info__text">
+            This isn’t just another rental company - We’re elevating the future
+            of furniture by replacing the commitment of ownership with a culture
+            of sharing in a way that’s curated, convenient, and sustainable.
+          </p>
+        </div>
+      </div>
+    </section>
+    <main class="main">
+      <section class="furniture">
+        <div class="container">
+          <div class="furniture__wrapper">
+            <div class="furniture__left">
+              <p class="furniture__title">
                 Enjoy a fully furnished space in less than week
               </p>
-              <p class="basis__textTwo">
+              <p class="furniture__text">
                 Feather furniture is available to be delivered and assembled in
                 New York City, Los Angeles and San Francisco.
               </p>
-              <a href="/">
-                <button class="basis__button">Explore Furniture</button>
-              </a>
-            </td>
-            <td>
-              <img
-                src="img/basis room.png"
-                alt="basis room"
-                class="basis__img"
-              />
-            </td>
-          </tr>
-        </table>
+              <a href="#" class="furniture__link">Explore Furniture</a>
+            </div>
+            <img
+              src="img/furniture.jpg"
+              alt="furniture"
+              class="furniture__img"
+            />
+          </div>
+        </div>
+      </section>
+      <section class="garage">
+        <div class="container">
+          <div class="garage__wrapper">
+            <img src="img/garage.jpg" alt="garage" class="garage__img" />
+            <div class="garage__right">
+              <p class="garage__title">Garage Sale - 40% & Up</p>
+              <p class="garage__text">
+                Our Garage Sale is open! Savings start at 40% on favorite
+                retired pieces. Find dressers, sofas, decor, and more to make
+                the year one to remember.
+              </p>
+              <p class="garage__word">Terms and conditions apply. View here.</p>
+              <a href="#" class="garage__link">Shop Now</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="furniture">
+        <div class="container">
+          <div class="furniture__wrapper">
+            <div class="furniture__left">
+              <p class="furniture__title">
+                Furniture for business, made simple.
+              </p>
+              <p class="furniture__text">
+                Say goodbye to cost, complexity, and commitment of furniture.
+                Feather makes it easy with affordable rental plans, white glove
+                delivery and best-in-class account service.
+              </p>
+              <a href="#" class="furniture__link">Visit Feather For Business</a>
+            </div>
+            <img src="img/business.jpg" alt="business" class="furniture__img" />
+          </div>
+        </div>
+      </section>
+      <section class="garage">
+        <div class="container" id="con">
+          <div class="garage__wrapper">
+            <img src="img/assemble.jpg" alt="assemble" class="garage__img" />
+            <div class="garage__right">
+              <p class="assemble__title">Never assemble furniture again.</p>
+              <p class="assemble__text">
+                We move a lot. There are countless floor plans and roommates
+                (oh, and your evolving tastes) between here and there. With
+                Feather, furnish your space without breaking a sweat or reaching
+                for a screwdriver.
+              </p>
+              <a href="#" class="assemble__link">How Feather Works</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <section class="bestsellers">
+      <div class="container">
+        <p class="bestsellers__title">Shop our Bestsellers</p>
+        <div class="bestsellers__wrapper">
+          <div class="table">
+            <img src="img/table.svg" alt="table" class="table__img" />
+            <p class="table__text">
+              Cooper Dining Table <br />rent for $15/mo of buy for $359 $314
+            </p>
+          </div>
+          <div class="console">
+            <img src="img/console.svg" alt="console" class="console__img" />
+            <p class="console__text">
+              Croft Media Console <br />rent for $35/mo or buy for $839 $ 739
+            </p>
+          </div>
+          <div class="chair">
+            <img src="img/chair.svg" alt="chair" class="chair__img" />
+            <p class="chair__text">
+              Essex Dining Chair <br />rent for $18/mo or buy for $429 $379
+            </p>
+          </div>
+          <div class="sofa">
+            <img src="img/sofa.svg" alt="sofa" class="sofa__img" />
+            <p class="sofa__text">
+              Ludlow Sofa <br />rent for $52/mo or buy for $1249 $1099
+            </p>
+          </div>
+        </div>
+        <a href="#" class="bestsellers__link">Shop All Furniture</a>
       </div>
-    </basis>
+    </section>
+    <section class="floyd">
+      <div class="container">
+        <div class="floyd__wrapper">
+          <img src="img/floyd.jpg" alt="Floyd Furniture" class="floyd__img" />
+          <div class="floyd__right">
+            <img src="img/floyd.svg" alt="logo" class="floyd__logo" />
+            <p class="floyd__text">Floyd Furniture Meets Feather Flexibility</p>
+            <button class="floyd__button">
+              <a href="#" class="floyd__link">Explore Floyd Furniture</a>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <article class="article">
+      <section class="reviews">
+        <div class="container">
+          <p class="reviews__title">The Reviews are in</p>
+          <div class="reviews__wrapper">
+            <div class="julie">
+              <div class="julie__top">
+                <img src="img/blue star.svg" alt="blue star" /><img
+                  src="img/blue star.svg"
+                  alt="blue star"
+                /><img src="img/blue star.svg" alt="blue star" /><img
+                  src="img/blue star.svg"
+                  alt="blue star"
+                /><img src="img/blue star.svg" alt="blue star" />
+              </div>
+              <p class="julie__text">Honestly BEST EXPERIENCE moving ever.</p>
+              <p class="autor">- Julie, San Francisco, CA</p>
+            </div>
+            <div class="anthony">
+              <div class="anthony__top">
+                <img src="img/orange star.svg" alt="orange star" /><img
+                  src="img/orange star.svg"
+                  alt="orange star"
+                /><img src="img/orange star.svg" alt="orange star" /><img
+                  src="img/orange star.svg"
+                  alt="orange star"
+                /><img src="img/orange star.svg" alt="orange star" />
+              </div>
+              <p class="anthony__text">
+                Extremely easy! Browsed for furniture and it was in my new
+                apartment within a week.
+              </p>
+              <p class="autor">- Anthony, Los Angeles, CA</p>
+            </div>
+            <div class="wesley">
+              <div class="wesley__top">
+                <img src="img/green star.svg" alt="green star" /><img
+                  src="img/green star.svg"
+                  alt="green star"
+                /><img src="img/green star.svg" alt="green star" /><img
+                  src="img/green star.svg"
+                  alt="green star"
+                /><img src="img/green star.svg" alt="green star" />
+              </div>
+              <p class="wesley__text">
+                THIS JUST MAKES SENSE. Truly obsessed with Feather.
+              </p>
+              <p class="autor">- Wesley, New York City, NY</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="ease">
+        <div class="container" id="con__ease">
+          <div class="ease__wrapper">
+            <p class="ease__text">
+              Ease the pain of moving from apartment to apartment.
+            </p>
+            <div class="ease__img">
+              <a href="https://www.purewow.com/" class="ease__link"
+                ><img src="img/PureWon.svg" alt="PureWon" /></a
+              ><a href="https://www.mydomaine.com/" class="ease__link"
+                ><img src="img/MYDOMAINE.svg" alt="MYDOMAINE" /></a
+              ><a href="https://www.mindbodygreen.com/" class="ease__link"
+                ><img src="img/mindbodygreen.svg" alt="mindbodygreen" /></a
+              ><a href="https://www.forbes.com/" class="ease__link"
+                ><img src="img/Forbes.svg" alt="Forbes" /></a
+              ><a href="https://www.fastcompany.com/" class="ease__link"
+                ><img src="img/FastCompany.svg" alt="FastCompany"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </article>
+    <footer class="footer">
+      <section class="shop">
+        <img src="img/woman.svg" alt="woman" class="shop__img" />
+        <p class="shop__text">
+          Feather is the stress-free way to furnish your home
+        </p>
+        <button class="shop__button">
+          <a href="#" class="shop__link">Shop Furniture</a>
+        </button>
+      </section>
+      <nav class="nav__footer">
+        <div class="footer__wrapper">
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a href="#" class="footer__link" id="one__link">FURNITURE</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Packges</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Living Room</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Bedroom</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Dining</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Home Office</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Decor</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Lighting</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Outdoo</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">All Furniture</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Sample Sale</a>
+            </li>
+          </ul>
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a href="#" class="footer__link" id="one__link">ABOUT</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">How it Works</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">About Feather</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Feather Furniture</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Reviews</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Feather for WeWork</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Feather for Busibess</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Feather for Stating</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Affiliate Program</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Careers</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">In Your Area</a>
+            </li>
+          </ul>
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a href="#" class="footer__link" id="one__link">HELP</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">FAQs</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Contact us</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Privacy Policy</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Terms</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">FloorFound Terms</a>
+            </li>
+          </ul>
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a href="#" class="footer__link" id="one__link"
+                >FEATHER ON SOCIAL MEDIA</a
+              >
+            </li>
+            <li class="footer__item" id="social__img">
+              <a href="#"
+                ><img src="img/Feather/mail.svg" alt="mail" class="social"
+              /></a>
+              <a href="#"
+                ><img src="img/Feather/p.svg" alt="P" class="social"
+              /></a>
+              <a href="#"
+                ><img
+                  src="img/Feather/twitter.svg"
+                  alt="twitter"
+                  class="social"
+              /></a>
+              <a href="#"
+                ><img
+                  src="img/Feather/instagram.svg"
+                  alt="instagram"
+                  class="social"
+              /></a>
+              <a href="#"
+                ><img src="img/Feather/in.svg" alt="in" class="social"
+              /></a>
+              <a href="#"
+                ><img
+                  src="img/Feather/facebook.svg"
+                  alt="facebook"
+                  class="social"
+              /></a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link" id="join">JOIN OUR NEWSLETTER</a>
+            </li>
+            <li class="footer__line"></li>
+          </ul>
+        </div>
+        <img src="img/door.svg" alt="door" class="last__img" />
+      </nav>
+    </footer>
   </body>
 </html>
