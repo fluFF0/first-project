@@ -8,7 +8,7 @@
 }
 
 body {
-  margin: 0;
+  margin: 0 auto;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -16,10 +16,47 @@ body {
 }
 
 .container {
-  width: 1280px;
-  margin: auto;
+  max-width: 1280px;
+  margin: 0 auto;
 }
 
+@media (max-width: 1280px) {
+  .container {
+    max-width: 1000px;
+  }
+  .intro__text {
+    padding-right: 250px;
+  }
+  .intro__wrapper {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 1000px) {
+  .container {
+    max-width: 768px;
+  }
+  .intro__wrapper {
+    display: grid;
+    justify-items: center;
+  }
+
+  .room__wrapper {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 480px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    max-width: 360px;
+  }
+}
 .header {
   background-color: #fbf8f5;
 }
@@ -28,10 +65,6 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.nav__menu {
-  width: 1280px;
 }
 
 .menu__list {
@@ -87,20 +120,13 @@ body {
   justify-content: space-between;
 }
 
-.intro__left {
-  width: 652px;
-}
-
 .intro__title {
-  width: 376px;
-  height: 152px;
   font-size: 64px;
   margin-left: 96px;
 }
 
 .intro__text {
-  width: 523px;
-  height: 112px;
+  padding-right: 33px;
   font-size: 18px;
   margin-left: 96px;
 }
@@ -108,8 +134,7 @@ body {
 .intro__button {
   background-color: #e9672b;
   border-radius: 30px;
-  width: 154px;
-  height: 60px;
+  padding: 16px 32px;
   margin-left: 105px;
 }
 
@@ -219,8 +244,7 @@ body {
   font-size: 24px;
   display: flex;
   justify-content: center;
-  width: 892px;
-  height: 96px;
+  padding: 0 194px;
   text-align: center;
   margin: 0;
 }
@@ -234,6 +258,7 @@ body {
   justify-content: space-between;
   padding-top: 32px;
   background-color: white;
+  gap: 177px;
 }
 
 .furniture__left {
@@ -243,8 +268,6 @@ body {
 }
 
 .furniture__title {
-  width: 397px;
-  height: 88px;
   display: flex;
   justify-content: start;
   font-size: 36px;
@@ -252,8 +275,6 @@ body {
 }
 
 .furniture__text {
-  width: 402px;
-  height: 84px;
   display: flex;
   justify-content: start;
   font-size: 18px;
@@ -261,8 +282,6 @@ body {
 }
 
 .furniture__link {
-  width: 223px;
-  height: 28px;
   font-size: 18px;
   color: #e9672b;
   margin-left: 85px;
@@ -282,51 +301,40 @@ body {
 }
 
 .garage__title {
-  width: 412px;
-  height: 44px;
   font-size: 36px;
   margin: 0 0 0 131px;
 }
 
 .garage__text {
-  width: 441px;
-  height: 84px;
   font-size: 18px;
   margin-left: 131px;
+  padding-right: 92px;
 }
 
 .garage__word {
-  width: 319px;
-  height: 28px;
   font-size: 18px;
   margin-left: 131px;
 }
 
 .garage__link {
-  width: 86px;
-  height: 28px;
   text-decoration: none;
   color: #e9672b;
   margin: 14px 0 0 131px;
 }
 
 .assemble__title {
-  width: 425px;
-  height: 88px;
   font-size: 36px;
   margin: 0 0 0 131px;
+  padding-right: 108px;
 }
 
 .assemble__text {
-  width: 418px;
-  height: 140px;
   font-size: 18px;
   margin-left: 131px;
+  padding-right: 115px;
 }
 
 .assemble__link {
-  width: 171px;
-  height: 28px;
   font-size: 18px;
   text-decoration: none;
   color: #e9672b;
@@ -358,11 +366,10 @@ body {
   display: flex;
   justify-content: center;
   gap: 4px;
+  padding: 0 168px;
 }
 
 .table {
-  width: 233px;
-  height: 430px;
   background-color: white;
   display: flex;
   flex-direction: column;
@@ -381,8 +388,6 @@ body {
 }
 
 .console {
-  width: 233px;
-  height: 430px;
   background-color: white;
   display: flex;
   flex-direction: column;
@@ -400,8 +405,6 @@ body {
 }
 
 .chair {
-  width: 233px;
-  height: 430px;
   background-color: white;
   display: flex;
   flex-direction: column;
@@ -420,8 +423,6 @@ body {
 }
 
 .sofa {
-  width: 233px;
-  height: 430px;
   background-color: white;
   display: flex;
   flex-direction: column;
@@ -443,11 +444,10 @@ body {
   justify-content: center;
   text-decoration: none;
   color: #e9672b;
-  height: 227px;
   padding-top: 55px;
+  padding-bottom: 144px;
   font-size: 18px;
 }
-
 .floyd {
   height: 486px;
   background-color: #fbf8f5;
@@ -458,7 +458,6 @@ body {
 }
 
 .floyd__right {
-  width: 448px;
   background-color: #e9672b;
   display: flex;
   flex-direction: column;
@@ -466,19 +465,14 @@ body {
   justify-content: center;
 }
 
-.floyd__logo {
-}
-
 .floyd__text {
-  width: 363px;
   font-size: 36px;
   color: white;
   text-align: center;
 }
 
 .floyd__button {
-  width: 272px;
-  height: 60px;
+  padding: 16px 40px;
   border-radius: 88px;
 }
 
@@ -518,14 +512,11 @@ body {
 }
 
 .julie__top {
-  margin: 34px 0 0 34px;
+  padding: 34px 0 0 34px;
 }
 
 .julie__text {
-  width: 290px;
-  height: 56px;
-  font-size: 18px;
-  margin: 34px 0 0 34px;
+  padding: 15px 72px 0 34px;
 }
 
 .autor {
@@ -549,10 +540,7 @@ body {
 }
 
 .anthony__text {
-  width: 317px;
-  height: 84px;
-  font-size: 18px;
-  margin: 34px 0 0 34px;
+  padding: 15px 72px 0 34px;
 }
 
 .wesley {
@@ -571,10 +559,7 @@ body {
 }
 
 .wesley__text {
-  width: 254px;
-  height: 56px;
-  font-size: 18px;
-  margin: 34px 0 0 34px;
+  padding: 15px 72px 0 34px;
 }
 
 #con__ease {
@@ -589,8 +574,7 @@ body {
 }
 
 .ease__text {
-  width: 913px;
-  height: 400px;
+  padding: 0 194px;
   font-size: 88px;
   text-align: center;
   display: flex;
@@ -610,9 +594,8 @@ body {
 }
 
 .shop {
-  width: 1280px;
-  height: 624px;
   margin: auto;
+  padding: 120px 0;
   display: flex;
   flex-direction: column;
   gap: 40px;
@@ -622,16 +605,14 @@ body {
 }
 
 .shop__text {
-  width: 292px;
-  height: 64px;
   font-size: 24px;
   text-align: center;
   margin: 0;
+  padding: 0 570px;
 }
 
 .shop__button {
-  width: 202px;
-  height: 60px;
+  padding: 16px 40px;
   background-color: #e9672b;
   border-radius: 88px;
 }
@@ -643,7 +624,6 @@ body {
 }
 
 .nav__footer {
-  width: 1280px;
   height: 650px;
   margin: auto;
   background-color: #f3f0ec;
